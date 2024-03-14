@@ -1,1 +1,18 @@
-<h1>Stupid Coaching</h1>
+<div>
+    <div class="d-grid gap-3 b-3">
+        <h1>Stupid Coaching</h1>
+    </div>
+    <div class="d-grid gap-3">
+        <div class="p-2 bg-light border mx">
+        <p><%= params[:question] %></p>
+        <p>-You</p>
+        </div>
+
+        <div class="p-2 bg-light border mx">
+        <p><%= @couch_answer %></p>
+        <p>-Your coach</p>
+    </div>
+    <div>
+        <%= link_to("Ask a new question", root_path) %>
+    </div>
+</div>
